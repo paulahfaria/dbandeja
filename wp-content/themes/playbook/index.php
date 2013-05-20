@@ -25,7 +25,8 @@
 						</header><!--.header-->
 						<div class="post-content image-caption-format-1">
 							<h2 class="home-title"><?php the_title(); ?></h2>
-							<?php echo excerpt(17);?>
+							<div class="excerpt"><?php echo excerpt(17);?></div>
+							<a class="read-more" href="">Ver Mais</a>
 						</div>
                         <div style="display:none" class="readMore"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php _e('Read More','mythemeshop'); ?></a></div>
 					</div><!--.post excerpt-->
