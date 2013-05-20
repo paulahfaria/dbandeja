@@ -18,6 +18,7 @@
                         <header>						
 							<h2 class="title">
 								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php _e(' ','mythemeshop'); the_time('j/n/Y'); ?></a>
+								<span class="thecomment"><a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?></a> Comentários</span>
 							</h2>
 						</header><!--.header-->
 						<div class="post-content image-caption-format-1">
@@ -28,7 +29,6 @@
                             	<span class="theauthor"><?php _e('Posted by: ','mythemeshop'); the_author_posts_link(); ?></span>
                                 <span class="thetime"><?php _e(' ','mythemeshop'); the_time('j/n/Y'); ?></span>
                             </div>
-                            <span class="thecomment"><a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?></a></span>
 						</div>
                         <div style="display:none" class="readMore"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php _e('Read More','mythemeshop'); ?></a></div>
 					</div><!--.post excerpt-->
