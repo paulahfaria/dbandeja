@@ -399,9 +399,15 @@ body > header {
     text-align: center;
     width:100%;
 }
-.banner-type{}
-.banner-title{}
-.banner-description{}
+.banner-type{
+    font-size: 18px;
+}
+.banner-title{
+    font-size: 48px;
+}
+.banner-description{
+    font-size: 18px;
+}
 .banner-image{
 /*    position: absolute;
     top:0;
