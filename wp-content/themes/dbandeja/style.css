@@ -487,6 +487,15 @@ body > header {
     float: left;
     max-width: 287px;
 }
+.post.highlight .featured-thumbnail {
+    float: left;
+    width: 100%;
+}
+.post.highlight #featured-thumbnail {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+}
 .featured-thumbnail img {
     margin-bottom: 0;
     width: 100%;
