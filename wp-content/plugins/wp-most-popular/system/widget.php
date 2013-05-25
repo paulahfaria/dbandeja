@@ -94,7 +94,21 @@ class WMP_Widget extends WP_Widget {
 		foreach ( $posts as $post ):
 			setup_postdata( $post );
 			?>
-			<li><a href="<?php the_permalink() ?>" title="<?php echo esc_attr(get_the_title() ? get_the_title() : get_the_ID()); ?>"><?php if ( get_the_title() ) the_title(); else the_ID(); ?></a></li>
+				<li>
+				<a href="<?php the_permalink() ?>" class="rthumb">
+					<?php if(has_post_thumbnail()): ?>
+						<?php the_post_thumbnail('widgetthumb', 'title='); ?>
+					<?php else: ?>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/relthumb.png" alt="<?php the_title(); ?>"  width='70px' height='70px' class="wp-post-image" />
+					<?php endif; ?>
+				</a>
+
+					<span class="post-date"><?php echo get_the_date('d/m/Y'); ?></span><br />
+
+				<a href="<?php the_permalink() ?>" title="<?php echo esc_attr( get_the_title() ? get_the_title() : get_the_ID() ); ?>"><?php if ( get_the_title() ) the_title(); else the_ID(); ?></a>
+
+			</li>
+
 			<?php
 		endforeach;
 		echo '</ul>';
