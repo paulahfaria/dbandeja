@@ -20,6 +20,14 @@
 			<div id="header">
 				<?php if ($options['mts_logo'] != '') { ?>
 					<?php if( is_front_page() || is_home() || is_404() ) { ?>
+						<ul class="menu full-menu">
+	                    	<li class="cat-item cat-item-1 menuli1">
+	                    		<a title="" href="">IR PARA A HOME DO SITE</a>
+	                    	</li>
+	                    	<li class="cat-item cat-item-1 menuli1">
+	                    		<a title="" href="">CONTATO</a>
+	                    	</li>
+	                    </ul>
 						<h1 id="logo">
 							<a href="<?php echo home_url(); ?>"><img src="<?php echo $options['mts_logo']; ?>" alt="<?php bloginfo( 'name' ); ?>"></a>
 						</h1><!-- END #logo -->
@@ -30,6 +38,14 @@
 					<?php } ?>
 				<?php } else { ?>
 					<?php if( is_front_page() || is_home() || is_404() ) { ?>
+						<ul class="menu full-menu">
+	                    	<li class="cat-item cat-item-1 menuli1">
+	                    		<a title="" href="">IR PARA A HOME DO SITE</a>
+	                    	</li>
+	                    	<li class="cat-item cat-item-1 menuli1">
+	                    		<a title="" href="">CONTATO</a>
+	                    	</li>
+	                    </ul>
 						<h1 id="logo">
 							<a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
 						</h1><!-- END #logo -->
@@ -44,14 +60,25 @@
 		</div><!--.container-->
         <div class="secondary-navigation">
             <nav id="navigation" >
-                <?php if ( has_nav_menu( 'primary-menu' ) ) { ?>
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'menu_class' => 'menu', 'container' => '' ) ); ?>
-                <?php } else { ?>
                     <ul class="menu">
-                        <?php wp_list_categories('title_li='); ?>
+                    	<li class="cat-item cat-item-1 menuli1">
+                    		<a title="" href="">IR PARA A HOME DO SITE</a>
+                    	</li>
+                    	<li class="cat-item cat-item-1 menuli1">
+                    		<a title="" href="">CONTATO</a>
+                    	</li>
                     </ul>
-                <?php } ?>
             </nav>
         </div>
 	</header>
+	<!-- full banner -->
+	<div id="full-banner">
+		<div id="banner-content">
+			<p class="banner-type">BLOG</p>
+			<p class="banner-title">SOLUÇÕES EM BUFFET</p>
+			<p class="banner-description">Os melhores lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+		</div>
+		<div id="banner-overlay"></div>
+		<img src="<?php bloginfo( 'template_url' ); ?>/images/banner.jpg" alt="" class="banner-image">
+	</div>
 	<div class="main-container">

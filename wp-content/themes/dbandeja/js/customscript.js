@@ -28,7 +28,7 @@ $(document).ready(function() {
       $("<option />", {
          "selected": "selected",
          "value"   : "",
-         "text"    : "Go to..."
+         "text"    : "Ir para..."
       }).appendTo("#navigation select");
       
       // Populate dropdown with menu items
