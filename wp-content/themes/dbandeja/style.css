@@ -394,13 +394,34 @@ body > header {
 #banner-content{
     position: absolute;
     z-index: 3;
-    top:170px;
+    top:42%;
     color:#FFF;
     text-align: center;
     width:100%;
 }
 .banner-type{
     font-size: 18px;
+    margin: auto;
+    position: relative;
+    width: 80px;
+}
+.banner-type:after{
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: #FFF;
+    content:"";
+    left:-40px;
+    top:8px;
+}
+.banner-type:before{
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: #FFF;
+    content:"";
+    right:-40px;
+    top:8px;
 }
 .banner-title{
     font-size: 48px;

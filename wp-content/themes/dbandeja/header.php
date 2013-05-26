@@ -75,6 +75,8 @@
 	<div id="full-banner">
 		<div id="banner-content">
 			<p class="banner-type">BLOG</p>
+			<br>
+			<br>
 			<p class="banner-title">SOLUÇÕES EM BUFFET</p>
 			<p class="banner-description">Os melhores lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
 		</div>
