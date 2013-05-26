@@ -571,11 +571,18 @@ class WP_Widget_Recent_Posts extends WP_Widget {
 		<ul>
 		<?php while ( $r->have_posts() ) : $r->the_post(); ?>
 			<li>
-				<?php the_post_thumbnail('widgetthumb'); ?>
+				<a href="<?php the_permalink() ?>" class="rthumb">
+					<?php if(has_post_thumbnail()): ?>
+						<?php the_post_thumbnail('widgetthumb', 'title='); ?>
+					<?php else: ?>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/relthumb.png" alt="<?php the_title(); ?>"  width='70px' height='70px' class="wp-post-image" />
+					<?php endif; ?>
+				</a>
+				<?php if ( $show_date ) : ?>
+					<span class="post-date"><?php echo get_the_date('d/m/Y'); ?></span><br />
+				<?php endif; ?>
 				<a href="<?php the_permalink() ?>" title="<?php echo esc_attr( get_the_title() ? get_the_title() : get_the_ID() ); ?>"><?php if ( get_the_title() ) the_title(); else the_ID(); ?></a>
-			<?php if ( $show_date ) : ?>
-				<span class="post-date"><?php echo get_the_date(); ?></span>
-			<?php endif; ?>
+
 			</li>
 		<?php endwhile; ?>
 		</ul>

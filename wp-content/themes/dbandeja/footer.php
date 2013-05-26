@@ -5,10 +5,17 @@
 <footer>
 	<div class="container">
 		<div class="footer-widgets">
-			<?php widgetized_footer(); ?>
+			<div>
+
+				<div><?php widgetized_footer(); ?></div>
+				
+
+				<div></div>
+			</div>
+			
+
 			<div class="copyrights">
 				<?php mts_copyrights_credit(); ?>
-                <span class="cright"><?php echo $options['mts_copyrights']; ?></span>
 			</div> 
             <div class="top">
                 <a href="#top" class="toplink">   </a></div>
