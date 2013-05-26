@@ -915,6 +915,14 @@ footer p { color: #8D8D8D }
     width: 100%;
     margin: 0;
 }
+
+.footer-widgets > div {
+
+    width: 600px;
+
+}
+
+
 .footer-widgets h3 {
     padding-bottom: 15px;
     color: #fff;

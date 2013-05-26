@@ -67,7 +67,7 @@
 								<h5><?php the_author_meta( 'nickname' ); ?></h5>
 								<p><?php the_author_meta('description') ?></p>
 							</div>
-						<?php }?>  
+						<?php } ?>  
 					</div><!--.g post-->
 					<?php comments_template( '', true ); ?>
 				<?php endwhile; /* end loop */ ?>
