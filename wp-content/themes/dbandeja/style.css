@@ -134,7 +134,7 @@ body {
     overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 12px;
     color: #444;
 }
@@ -436,6 +436,13 @@ body > header {
     top:0;
     left:0;
     z-index: 1;*/
+}
+#widget_recent_entries .post-date{
+    color:#009f9b;
+    font-size: 12px;
+}
+#widget_recent_entries a{
+    color:#363636 !important;
 }
 /*-[ Content ]--------------------*/
 .article {
@@ -1001,7 +1008,7 @@ footer .widget #s { background: #3D3D3D }
     font-size: 18px;
     line-height: 18px;
     margin: 5px 0 15px 0;
-    border-bottom: 1px solid #C2C2C2;
+    border-bottom: 1px solid #e6e6e6;
     padding-bottom: 10px;
     font-family: "allerregular";
 }
