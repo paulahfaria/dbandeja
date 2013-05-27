@@ -20,7 +20,7 @@
 			<div id="header">
 				<ul class="menu full-menu">
                 	<li class="cat-item cat-item-1 menuli1">
-                		<a title="" href="">IR PARA A HOME DO SITE</a>
+                		<a title="dbandeja" href="<?php echo bloginfo('url') ?>">IR PARA A HOME DO SITE</a>
                 	</li>
                 </ul>
 				<h1 id="logo">

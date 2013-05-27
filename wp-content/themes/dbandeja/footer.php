@@ -9,7 +9,7 @@
 
 				<?php if($options['mts_author_box'] == '1') { ?>
 					<div class="postauthor">
-						<h4><?php bloginfo('name') ?></h4>
+						<h4>COMO FUNCIONA O DBANDEJA</h4>
 						<div class="author-description">
 							<img src="<?php bloginfo( 'template_url' ); ?>/images/sobre-dbandeja.png" alt="">
 							<p><?php bloginfo('description') ?></p>

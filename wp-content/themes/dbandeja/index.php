@@ -69,8 +69,8 @@
 				<?php $p++; endwhile; else: ?>
 					<div class="post excerpt">
 						<div class="no-results">
-							<p><strong><?php _e('There has been an error.', 'mythemeshop'); ?></strong></p>
-							<p><?php _e('We apologize for any inconvenience, please hit back on your browser or use the search form below.', 'mythemeshop'); ?></p>
+							<p><strong><?php _e('Conteúdo não encontrado', 'mythemeshop'); ?></strong></p>
+							<p><?php _e('A página ou conteúdo buscado, não foi encontrado. Por favor tente novamente.', 'mythemeshop'); ?></p>
 							<?php get_search_form(); ?>
 						</div><!--noResults-->
 					</div>
