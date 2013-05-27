@@ -23,11 +23,12 @@
 								<div class="thetime">
 									<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php _e(' ','mythemeshop'); the_time('j/n/Y'); ?></a>
 								</div>
-								<span class="thecomment"><a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?></a> Comentários</span>
+								<span class="thecomment"><a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?></a> Comentários</span><br>
+								<h2 class="home-title"><?php the_title(); ?></h2>
 							</div>
 						</header><!--.header-->
 						<div class="post-content image-caption-format-1">
-							<h2 class="home-title"><?php the_title(); ?></h2>
+							
 							<div class="excerpt"><?php echo excerpt(17);?></div>
 							<a class="read-more" href="">Ver Mais</a>
 						</div>

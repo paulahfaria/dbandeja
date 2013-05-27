@@ -22,9 +22,6 @@
                 	<li class="cat-item cat-item-1 menuli1">
                 		<a title="" href="">IR PARA A HOME DO SITE</a>
                 	</li>
-                	<li class="cat-item cat-item-1 menuli1">
-                		<a title="" href="">CONTATO</a>
-                	</li>
                 </ul>
 				<h1 id="logo">
 					<a href="<?php echo home_url(); ?>"><img src="<?php echo $options['mts_logo']; ?>" alt="<?php bloginfo( 'name' ); ?>"></a>
