@@ -8,10 +8,10 @@
 
 					<?php if($p == 1 && is_home()){ ?>
 
-					<div class="post highlight <?php echo (++$j % 2 == 0) ? 'last' : ''; ?>">
+					<div class="post highlight">
 						<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="nofollow" id="featured-thumbnail">
 							<?php if ( has_post_thumbnail() ) { ?> 
-								<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail('featured',array('title' => '')); echo '</div>'; ?>
+								<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail('highlight',array('title' => '')); echo '</div>'; ?>
 							<?php } else { ?>
 								<div class="featured-thumbnail">
 									<img width="100%" src="<?php echo get_template_directory_uri(); ?>/images/nothumb.png" class="attachment-featured wp-post-image" alt="<?php the_title(); ?>">
@@ -23,7 +23,8 @@
 								<div class="thetime">
 									<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php _e(' ','mythemeshop'); the_time('j/n/Y'); ?></a>
 								</div>
-								<span class="thecomment"><a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?></a> Comentários</span><br>
+								<span class="thecomment"><a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?></a> Comentários</span>
+								<br/>
 								<h2 class="home-title"><?php the_title(); ?></h2>
 							</div>
 						</header><!--.header-->
@@ -43,7 +44,7 @@
 								<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail('featured',array('title' => '')); echo '</div>'; ?>
 							<?php } else { ?>
 								<div class="featured-thumbnail">
-									<img width="287" height="172" src="<?php echo get_template_directory_uri(); ?>/images/nothumb.png" class="attachment-featured wp-post-image" alt="<?php the_title(); ?>">
+									<img width="284" height="150" src="<?php echo get_template_directory_uri(); ?>/images/nothumb.png" class="attachment-featured wp-post-image" alt="<?php the_title(); ?>">
 								</div>
 							<?php } ?>
 						</a>

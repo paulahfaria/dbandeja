@@ -19,7 +19,8 @@ if ( function_exists( 'add_theme_support' ) ) {
 	set_post_thumbnail_size( 290, 150, true );
 	add_image_size( 'featured', 290, 150, true ); //featured
 	add_image_size( 'related', 82, 60, true ); //related
-	add_image_size( 'widgetthumb', 65, 50, true ); //widget
+	add_image_size( 'highlight', 600, 360, true ); //related
+	add_image_size( 'widgetthumb', 50, 50, true ); //widget
 }
 
 /*-----------------------------------------------------------------------------------*/

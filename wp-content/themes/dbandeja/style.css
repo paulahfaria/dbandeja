@@ -467,6 +467,8 @@ body > header {
     clear: both;
     font-size: 14px;
     margin-bottom: 10px;
+    margin-top: 15px;
+    float: left;
 }
 .home .post-content, .archive .post-content {
     line-height: 20px;
@@ -478,8 +480,11 @@ body > header {
 .readMore {
     float: right;
     color: #7B7A79;
+    position: relative;
 }
 .readMore a { color: #c1bbb6 }
+
+
 .ss-full-width {
     margin-bottom: 30px;
     overflow: hidden;
@@ -492,9 +497,9 @@ body > header {
 .post.excerpt {
     margin-bottom: 30px;
     overflow: hidden;
-    margin-right: 3.8%;
+    /*margin-right: 3.8%;*/
     width: 48%;
-    min-height: 344px;
+    min-height: 285px;
 }
 .post.excerpt header { margin-bottom: 3px }
 .post.excerpt header .title {
@@ -510,14 +515,23 @@ body > header {
 .featured-thumbnail {
     float: left;
     max-width: 100%;
+    width: 286px;
+    overflow: hidden;
 }
 #featured-thumbnail {
     float: left;
     max-width: 287px;
 }
+#featured-thumbnail img{
+    height: 150px !important;
+}
 .post.highlight .featured-thumbnail {
     float: left;
     width: 100%;
+}
+
+.post.highlight #featured-thumbnail img {
+    height: auto !important;
 }
 .post.highlight #featured-thumbnail {
     float: left;
@@ -528,9 +542,9 @@ body > header {
 }
 .post.highlight header{
     width: 400px;
-    margin-top: -70px;
+    margin-top: -95px;
     background-color: #FFF;
-    padding: 10px 10px 0 0;
+    padding: 20px 15px 0 0;
 }
 .post.highlight header h2{
     font-size: 30px;
@@ -585,10 +599,11 @@ body > header {
 }
 .thecomment{
     color:#828282;
-    font-size: 12px;
+    font-size: 14px;
     float: right;
     padding-right:10px;
 }
+
 .single_post .thecomment {
     display: inline-block;
     position: relative;
@@ -634,7 +649,7 @@ body > header {
 .excerpt .thecomment a {
     display: inline-block;
     position: relative;
-    width: 29px;
+    width: 15px;
     height: 18px;
     line-height: 18px;
     padding: 0px;
@@ -645,7 +660,7 @@ body > header {
     border-radius: 0px;
     color:#009f9b !important;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
 }
 /*.excerpt .thecomment a:after {
     content: "";
@@ -665,7 +680,7 @@ article header {
     float: left;
     width: 100%;
 }
-.thecomment a { color: #FFFFFF!important }
+.thecomment a { color: #009f9b !important }
 .article img.left, .article img.alignleft, .wp-caption.alignleft {
     margin: 0.3em 1.571em 0.5em 0;
     display: block;
@@ -900,11 +915,34 @@ nav #searchform fieldset {
 .footer-widgets fieldset, #sidebars fieldset { width: 100% }
 /*-[ Read More ]-------------------*/
 .read-more {
-    margin: 0 0 0 10px;
     line-height: 1.4em;
     background: none;
-    padding: 0;
+    margin: 10px 0;
     font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    width: 70px;
+}
+.read-more:after{
+    content: "";
+    position: absolute;
+    right: -30px;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    background: url('images/read-more.png') no-repeat 0 0 transparent;
+    display: block;
+}
+.post.highlight .read-more{
+    font-size: 24px; width: 110px;
+}
+.post.highlight .read-more:after{
+    right: -30px;
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    background: url('images/read-more.png') no-repeat -15px 0 transparent;
 }
 /*-[ Top Ad in Post ]-------------------------------------*/
 .topad {
@@ -965,7 +1003,13 @@ footer .widget #s { background: #3D3D3D }
     margin: 5px 0 15px 0;
     border-bottom: 1px solid #C2C2C2;
     padding-bottom: 10px;
+    font-family: "allerregular";
 }
+
+.widget a{
+    color: #fbad18 !important;
+}
+
 /*-[ Footer ]-------------------*/
 body > footer {
     background: none repeat scroll 0 0 #FFFFFF;
@@ -1173,7 +1217,7 @@ footer p { color: #8D8D8D }
 .clear { clear: both }
 .left { float: left }
 .right { float: right }
-.last { margin-right: 0 !important }
+.last { margin-left: 3% !important; }
 /*-[ Tag widget ]------------------------------*/
 .tagcloud a {
     background-color: #FBAD18;
