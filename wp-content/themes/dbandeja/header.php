@@ -62,10 +62,7 @@
             <nav id="navigation" >
                     <ul class="menu">
                     	<li class="cat-item cat-item-1 menuli1">
-                    		<a title="" href="">IR PARA A HOME DO SITE</a>
-                    	</li>
-                    	<li class="cat-item cat-item-1 menuli1">
-                    		<a title="" href="">CONTATO</a>
+                    		<a title="" href="">CONHEÇA O SITE</a>
                     	</li>
                     </ul>
             </nav>
