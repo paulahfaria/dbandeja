@@ -18,43 +18,18 @@
 	<header class="main-header">
 		<div class="container">
 			<div id="header">
-				<?php if ($options['mts_logo'] != '') { ?>
-					<?php if( is_front_page() || is_home() || is_404() ) { ?>
-						<ul class="menu full-menu">
-	                    	<li class="cat-item cat-item-1 menuli1">
-	                    		<a title="" href="">IR PARA A HOME DO SITE</a>
-	                    	</li>
-	                    	<li class="cat-item cat-item-1 menuli1">
-	                    		<a title="" href="">CONTATO</a>
-	                    	</li>
-	                    </ul>
-						<h1 id="logo">
-							<a href="<?php echo home_url(); ?>"><img src="<?php echo $options['mts_logo']; ?>" alt="<?php bloginfo( 'name' ); ?>"></a>
-						</h1><!-- END #logo -->
-					<?php } else { ?>
-						<h2 id="logo">
-							<a href="<?php echo home_url(); ?>"><img src="<?php echo $options['mts_logo']; ?>" alt="<?php bloginfo( 'name' ); ?>"></a>
-						</h2><!-- END #logo -->
-					<?php } ?>
-				<?php } else { ?>
-					<?php if( is_front_page() || is_home() || is_404() ) { ?>
-						<ul class="menu full-menu">
-	                    	<li class="cat-item cat-item-1 menuli1">
-	                    		<a title="" href="">IR PARA A HOME DO SITE</a>
-	                    	</li>
-	                    	<li class="cat-item cat-item-1 menuli1">
-	                    		<a title="" href="">CONTATO</a>
-	                    	</li>
-	                    </ul>
-						<h1 id="logo">
-							<a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
-						</h1><!-- END #logo -->
-					<?php } else { ?>
-						<h2 id="logo">
-							<a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
-						</h2><!-- END #logo -->
-					<?php } ?>
-				<?php } ?>
+				<ul class="menu full-menu">
+                	<li class="cat-item cat-item-1 menuli1">
+                		<a title="" href="">IR PARA A HOME DO SITE</a>
+                	</li>
+                	<li class="cat-item cat-item-1 menuli1">
+                		<a title="" href="">CONTATO</a>
+                	</li>
+                </ul>
+				<h1 id="logo">
+					<a href="<?php echo home_url(); ?>"><img src="<?php echo $options['mts_logo']; ?>" alt="<?php bloginfo( 'name' ); ?>"></a>
+				</h1><!-- END #logo -->
+	
                 <?php dynamic_sidebar('Header Banner'); ?>				              
 			</div><!--#header-->
 		</div><!--.container-->

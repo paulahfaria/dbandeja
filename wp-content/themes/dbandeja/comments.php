@@ -13,7 +13,7 @@ return;
 <!-- You can start editing here. -->
 <?php if ( have_comments() ) : ?>
 	<div id="comments">
-		<div class="total-comments"><?php comments_number('No Responses', 'Comments', 'Comments' );?></div>
+		<div class="total-comments"><?php comments_number('No Responses', 'Comentários', 'Comentários' );?></div>
 			<ol class="commentlist">
 				<div class="navigation">
 					<div class="alignleft"><?php previous_comments_link() ?></div>
@@ -39,9 +39,9 @@ return;
 	<div id="commentsAdd">
 		<div id="respond" class="box m-t-6">
 			<?php $comments_args = array(
-					'title_reply'=>'<h4><span>Leave a Reply</span></h4></h4>',
+					'title_reply'=>'<h4><span>Deixe seu comentário</span></h4></h4>',
 					'comment_notes_after' => '',
-					'label_submit' => 'Submit Comment',
+					'label_submit' => 'Enviar',
 					'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
 			); 
 			comment_form($comments_args); ?>

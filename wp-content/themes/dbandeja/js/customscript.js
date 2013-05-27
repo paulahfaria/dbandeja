@@ -163,9 +163,9 @@ jQuery(document).ready(function(e) {
 		$('.secondary-navigation ul').each(function(index, element) { $(this).addClass('menuul'+mc++); });		
 		$('.secondary-navigation ul li').each(function(index, element) { $(this).addClass('menuli'+ml++); });		
 		$('.secondary-navigation .menuul1').append('<li class="search_li"><form method="get" id="searchform" class="search-form" action="<?php echo home_url(); ?>" _lpchecked="1"><input type="text" name="s" id="s" value=\'Search the site\' onblur="if (this.value == \'\') {this.value = \'Search the site\';}" onfocus="if (this.value == \'Search the site\') {this.value = \'\';}" ><input id="search-image" class="sbutton" type="submit" style="border:0; vertical-align: top;" value="Search"></form></li>');
-		$('#commentform #author').attr('placeholder','Name...');
-		$('#commentform #email').attr('placeholder','Email...');
+		$('#commentform #author').attr('placeholder','Nome...');
+		$('#commentform #email').attr('placeholder','E-mail...');
 		$('#commentform #url').attr('placeholder','Website...');	
-		$('#commentform input#submit').val('Send');
+		$('#commentform input#submit').val('Enviar');
 	}(jQuery));
 });
